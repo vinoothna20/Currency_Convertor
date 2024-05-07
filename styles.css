@@ -1,0 +1,192 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+  /* background: linear-gradient(4deg, #3a2626, transparent); */
+  background-image: url("./bg-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#mainDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -90%);
+  padding: 40px 10px;
+  border-radius: 8px;
+  background-color: #bfc7ce00;
+  box-shadow: 0px 0px 3px 2px #8ba0b3;
+}
+
+h1 {
+  padding-left: 26px;
+  margin: 0;
+  color: #8dff05;
+}
+
+#convDiv {
+  display: flex;
+  padding: 30px 25px;
+  justify-content: space-between;
+}
+
+#fromDiv,
+#toDiv {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 45%;
+  gap: 20px;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 6px 6px 6px 0px black;
+  border-radius: 5px;
+}
+
+#btnDiv {
+  display: flex;
+  justify-content: end;
+  padding-right: 28px;
+}
+
+#convertBtn {
+  padding: 12px 22px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #8dff05;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  #mainDiv {
+    top: 60%;
+    left: 54%;
+  }
+
+  h1 {
+    padding-left: 20px;
+  }
+
+  #convDiv {
+    padding: 30px 20px;
+  }
+
+  input,
+  select {
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  #btnDiv {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #mainDiv {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #mainDiv {
+    padding: 30px 10px;
+  }
+  h1 {
+    padding-left: 16px;
+  }
+  #convDiv {
+    padding: 25px 15px;
+  }
+
+  input,
+  select {
+    font-size: 17px;
+  }
+  #btnDiv {
+    padding-right: 18px;
+  }
+  #convertBtn {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #mainDiv {
+    padding: 30px 0px;
+  }
+  h1 {
+    padding-left: 21px;
+    font-size: 27px;
+  }
+  #convDiv {
+    padding: 25px 3px;
+    justify-content: space-around;
+  }
+  #fromDiv,
+  #toDiv {
+    width: 40%;
+  }
+  input,
+  select {
+    font-size: 14px;
+    padding: 7px;
+  }
+  #btnDiv {
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  #convertBtn {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  #convDiv {
+    width: 340px;
+  }
+
+  #convertBtn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  #mainDiv {
+    box-shadow: none;
+  }
+  #convDiv {
+    width: 290px;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+  #fromDiv,
+  #toDiv {
+    width: 70%;
+  }
+  input,
+  select {
+    font-size: 16px;
+    padding: 8px;
+  }
+  #btnDiv {
+    justify-content: center;
+    padding: 0;
+  }
+}

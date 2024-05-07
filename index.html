@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="mainDiv">
+      <h1>Currency Converter</h1>
+      <div id="convDiv">
+        <div id="fromDiv">
+          <input type="text" placeholder="Enter an value" />
+
+          <select name="from" id="from">
+            <option value="from">From</option>
+            <option value="aus">Australian Dollar</option>
+            <option value="bang">Bangladeshi Taka</option>
+            <option value="brazil">Brazilian Real</option>
+            <option value="canada">Canadian Dollar</option>
+            <option value="china">Chinese Yuan</option>
+            <option value="egypt">Egyptian Pound</option>
+            <option value="euro">Euro</option>
+            <option value="india">Indian Rupee</option>
+            <option value="mexico">Mexican Peso</option>
+            <option value="sngpr">Singapore Dollar</option>
+            <option value="swiss">Swiss Franc</option>
+            <option value="us">United States Dollar</option>
+          </select>
+        </div>
+        <div id="toDiv">
+          <input type="text" />
+          <select name="to" id="to">
+            <option value="to">To</option>
+            <option value="aus">Australian Dollar</option>
+            <option value="bang">Bangladeshi Taka</option>
+            <option value="brazil">Brazilian Real</option>
+            <option value="canada">Canadian Dollar</option>
+            <option value="china">Chinese Yuan</option>
+            <option value="egypt">Egyptian Pound</option>
+            <option value="euro">Euro</option>
+            <option value="india">Indian Rupee</option>
+            <option value="mexico">Mexican Peso</option>
+            <option value="sngpr">Singapore Dollar</option>
+            <option value="swiss">Swiss Franc</option>
+            <option value="us">United States Dollar</option>
+          </select>
+        </div>
+      </div>
+      <div id="btnDiv">
+        <button id="convertBtn" onclick="conversionFun()">Convert</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
